@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HouseCell" rowHeight="102" id="KGk-i7-Jjw" customClass="HouseTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3g8-3F-gqc">
+                        <rect key="frame" x="94" y="27" width="277" height="25"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="P8w-7d-O8z">
+                        <rect key="frame" x="8" y="18" width="70" height="66"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="kU9-LS-otL"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="P8w-7d-O8z" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="0oc-5d-hOE"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="3g8-3F-gqc" secondAttribute="trailing" constant="11" id="2Vf-sD-iB0"/>
+                    <constraint firstItem="3g8-3F-gqc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="19" id="Cb4-Hp-5FL"/>
+                    <constraint firstItem="P8w-7d-O8z" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="UtC-IY-Zog"/>
+                    <constraint firstItem="3g8-3F-gqc" firstAttribute="leading" secondItem="P8w-7d-O8z" secondAttribute="trailing" constant="16" id="cjn-eZ-fXa"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="3g8-3F-gqc" secondAttribute="bottom" constant="41" id="mGn-ib-ICJ"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="P8w-7d-O8z" secondAttribute="bottom" constant="9" id="tqk-KH-UKa"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.077697948219999993" green="0.80927309780000001" blue="0.066909399999999994" alpha="0.28999999999999998" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="image" destination="P8w-7d-O8z" id="bnc-7n-EI6"/>
+                <outlet property="label" destination="3g8-3F-gqc" id="2QI-WL-egg"/>
+            </connections>
+            <point key="canvasLocation" x="175" y="179"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Icon.png" width="180" height="180"/>
+    </resources>
+</document>

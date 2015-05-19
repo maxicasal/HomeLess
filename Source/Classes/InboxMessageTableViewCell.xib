@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="InboxMessageCell" rowHeight="90" id="KGk-i7-Jjw" customClass="InboxMessageTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="323" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="receive" translatesAutoresizingMaskIntoConstraints="NO" id="GmO-nk-c2t">
+                        <rect key="frame" x="-8" y="2" width="337" height="84"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GkW-zY-q8B">
+                        <rect key="frame" x="8" y="5" width="68" height="26"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="68" id="PNi-X9-EmB"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PbN-m5-7Is">
+                        <rect key="frame" x="28" y="22" width="264" height="59"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="0.2147178787" green="1" blue="0.1974473263" alpha="0.10000000000000001" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="GmO-nk-c2t" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-6" id="3J0-uZ-bpT"/>
+                    <constraint firstItem="PbN-m5-7Is" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="7" id="66d-QS-aHw"/>
+                    <constraint firstItem="GkW-zY-q8B" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-3" id="DHw-8u-p6O"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="GkW-zY-q8B" secondAttribute="bottom" constant="50" id="DkP-BR-KOF"/>
+                    <constraint firstItem="PbN-m5-7Is" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="14" id="Pv9-Zt-J6s"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="PbN-m5-7Is" secondAttribute="trailing" constant="23" id="UVw-2M-0q6"/>
+                    <constraint firstItem="PbN-m5-7Is" firstAttribute="centerY" secondItem="GmO-nk-c2t" secondAttribute="centerY" constant="7.5" id="Uxv-1O-eFD"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="GmO-nk-c2t" secondAttribute="trailing" constant="-14" id="W7G-Ki-3tw"/>
+                    <constraint firstItem="GkW-zY-q8B" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="XZQ-QA-W0r"/>
+                    <constraint firstItem="PbN-m5-7Is" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="20" id="Xde-5k-IDA"/>
+                    <constraint firstItem="GmO-nk-c2t" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-16" id="bdW-Pu-TYf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="date" destination="GkW-zY-q8B" id="XyJ-fc-91u"/>
+                <outlet property="message" destination="PbN-m5-7Is" id="EYc-x0-QwR"/>
+            </connections>
+            <point key="canvasLocation" x="364.5" y="310"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="receive" width="253" height="89"/>
+    </resources>
+</document>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HistoricalInboxCell" rowHeight="60" id="KGk-i7-Jjw" customClass="HistoricalInboxTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="receive" translatesAutoresizingMaskIntoConstraints="NO" id="lbd-cG-1VN">
+                        <rect key="frame" x="-8" y="-1" width="337" height="63"/>
+                    </imageView>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tqe-zM-Ex6">
+                        <rect key="frame" x="61" y="12" width="231" height="46"/>
+                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        <connections>
+                            <outlet property="delegate" destination="-1" id="cJQ-Z4-bgd"/>
+                        </connections>
+                    </textView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pHT-mi-TlM">
+                        <rect key="frame" x="8" y="-1" width="68" height="27"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="68" id="rvd-o9-EX0"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="tqe-zM-Ex6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="4" id="3wc-H3-SWZ"/>
+                    <constraint firstItem="lbd-cG-1VN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-16" id="9pa-1n-Hk2"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="tqe-zM-Ex6" secondAttribute="trailing" constant="20" id="IvA-tH-UGb"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="tqe-zM-Ex6" secondAttribute="bottom" constant="-7" id="MR0-Cu-laW"/>
+                    <constraint firstItem="tqe-zM-Ex6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="53" id="V0O-Jm-iyA"/>
+                    <constraint firstItem="lbd-cG-1VN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-9" id="XUO-2F-4p6"/>
+                    <constraint firstItem="pHT-mi-TlM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="bUH-nA-AAc"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="lbd-cG-1VN" secondAttribute="bottom" constant="-11" id="dcC-RT-BOJ"/>
+                    <constraint firstItem="pHT-mi-TlM" firstAttribute="top" secondItem="lbd-cG-1VN" secondAttribute="top" id="p0C-xb-juj"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="pHT-mi-TlM" secondAttribute="bottom" constant="25" id="p8l-Lz-3bN"/>
+                    <constraint firstItem="lbd-cG-1VN" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="xzJ-1U-K67"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="date" destination="pHT-mi-TlM" id="NGf-qb-IbI"/>
+                <outlet property="message" destination="tqe-zM-Ex6" id="4I7-B5-Lta"/>
+            </connections>
+            <point key="canvasLocation" x="140" y="170"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="receive" width="253" height="89"/>
+    </resources>
+</document>
